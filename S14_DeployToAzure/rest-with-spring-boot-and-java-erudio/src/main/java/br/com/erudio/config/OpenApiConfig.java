@@ -14,7 +14,7 @@ public class OpenApiConfig {
 	OpenAPI customOpenAPI() {
 		return new OpenAPI()
 			.info(new Info()
-				.title("RESTful API with Java 19 and Spring Boot 3.0.1")
+				.title("Hello Microsoft Azure")
 				.version("v1")
 				.description("Some description about your API")
 				.termsOfService("https://pub.erudio.com.br/meus-cursos")
