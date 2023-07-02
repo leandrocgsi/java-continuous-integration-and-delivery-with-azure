@@ -14,7 +14,7 @@ public class OpenApiConfig {
 	OpenAPI customOpenAPI() {
 		return new OpenAPI()
 			.info(new Info()
-				.title("Hello Microsoft Azure - CICD")
+				.title("Hello Microsoft Azure")
 				.version("v1")
 				.description("Some description about your API")
 				.termsOfService("https://pub.erudio.com.br/meus-cursos")
