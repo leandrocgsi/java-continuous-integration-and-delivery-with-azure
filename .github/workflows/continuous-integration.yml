@@ -25,16 +25,31 @@ jobs:
         cache: maven
 
     - name: Build Application JAR
-      working-directory: ./S13_DockerizingAfter/rest-with-spring-boot-and-java-erudio
+      working-directory: ./S15_CIandCDwithAzure/rest-with-spring-boot-and-java-erudio
       run: mvn clean package
 
     - name: Docker Compose Build
-      working-directory: ./S13_DockerizingAfter
+      working-directory: ./S15_CIandCDwithAzure
       run: docker compose build
+
+    - name: Azure Container Registry Login
+      uses: Azure/docker-login@v1
+      with:
+        username: ${{ secrets.AZ_DOCKER_USERNAME }}
+        password: ${{ secrets.AZ_DOCKER_PASSWORD }}
+        login-server: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
+
+    - name: Push Docker Images to Azure Container Registry
+      run: |
+        docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:latest
+        docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:latest
+        
+        docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:${{ github.run_id }}
+        docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:${{ github.run_id }}
 
     - name: Push to Docker Hub Container Registry
       run: |
-        docker tag ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:latest ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:${{ github.run_id }}
+        docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
 
-        docker push ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:${{ github.run_id }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:latest
+        docker push ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
+        docker push ${{ secrets.IMAGE_NAME }}:latest
