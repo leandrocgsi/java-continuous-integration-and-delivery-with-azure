@@ -31,6 +31,13 @@ jobs:
     - name: Docker Compose Build
       working-directory: ./S15_CIandCDwithAzure
       run: docker compose build
+        
+    - name: Push to Docker Hub Container Registry
+      run: |
+        docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
+
+        docker push ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
+        docker push ${{ secrets.IMAGE_NAME }}:latest
 
     - name: Azure Container Registry Login
       uses: Azure/docker-login@v1
@@ -46,13 +53,6 @@ jobs:
         
         docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:${{ github.run_id }}
         docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/rest-with-spring-boot-erudio:${{ github.run_id }}
-        
-    - name: Push to Docker Hub Container Registry
-      run: |
-        docker tag ${{ secrets.IMAGE_NAME }}:latest ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
-
-        docker push ${{ secrets.IMAGE_NAME }}:${{ github.run_id }}
-        docker push ${{ secrets.IMAGE_NAME }}:latest
 
     - name: Azure Login
       uses: Azure/login@v1.4.6
