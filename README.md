@@ -1,4 +1,5 @@
 # [Java Continuous Integration and Delivery with Microsoft Azure and Github Actions](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-azure-e-github-actions/?couponCode=GTHB_FLASH_SALE2021)
+### [Domine Integração e Entrega Continuas com JUnit 5, Mockito, Spring Boot 3, TestContainers, Github Actions, Docker, Microsoft Azure e+]https://www.udemy.com/course/java-continuous-integration-continuous-delivery-azure-e-github-actions/?couponCode=GTHB_FLASH_SALE2021)
 
 [![Continuous Integration with Github Actions](https://github.com/leandrocgsi/java-continuous-integration-and-delivery-with-azure/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/leandrocgsi/java-continuous-integration-and-delivery-with-azure/actions/workflows/continuous-integration.yml)
 
