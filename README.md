@@ -2,9 +2,9 @@
 
 [![Continuous Integration with Github Actions](https://github.com/leandrocgsi/java-continuous-integration-and-delivery-with-azure/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/leandrocgsi/java-continuous-integration-and-delivery-with-azure/actions/workflows/continuous-integration.yml)
 
-[![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/28_CICD_JavaAzure.png?raw=true "Java CI e CD com Testes, Microsoft Azure e Github Actions")](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-aws-e-github-actions/?couponCode=LAUNCH_CDCD_JAVA)
+[![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/28_CICD_JavaAzure.png?raw=true "Java Continuous Integration and Delivery with Azure and Github Actions")](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-azure-e-github-actions/?couponCode=GTHB_FLASH_SALE2021)
 
-Este é o repositório dos codigos fonte desenvolvidos no curso [Java CI e CD com Testes, Microsoft Azure e Github Actions](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-aws-e-github-actions/?couponCode=LAUNCH_CDCD_JAVA)
+Este é o repositório dos codigos fonte desenvolvidos no curso [Java CI e CD com Testes, Microsoft Azure e Github Actions](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-azure-e-github-actions/?couponCode=GTHB_FLASH_SALE2021)
 
 # Cursos Relacionados
 
@@ -12,7 +12,7 @@ Este é o repositório dos codigos fonte desenvolvidos no curso [Java CI e CD co
 
 [![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/tests_java.png?raw=true "Java Unit Testing com Spring Boot 3, TDD, Junit 5 e Mockito")](https://www.udemy.com/course/java-unit-testing-com-java-spring-boot-3-junit-5-e-mockito/?couponCode=GTHB_FLASH_SALE2021)
 
-[![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/28_CICD_JavaAzure.png?raw=true "Java Continuous Integration and Delivery com AWS e Github Actions")](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-aws-e-github-actions/?couponCode=LAUNCH_CDCD_JAVA)
+[![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/25_CICD_JavaAWS.png?raw=true "Java Continuous Integration and Delivery com AWS e Github Actions")](https://www.udemy.com/course/java-continuous-integration-continuous-delivery-aws-e-github-actions/?couponCode=LAUNCH_CDCD_JAVA)
 
 [![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/docker_do_zero_a_maestria_conteinerizacao_desmistificada.png?raw=true "Docker do Zero à Maestria - Contêinerização Desmistificada")](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
 
